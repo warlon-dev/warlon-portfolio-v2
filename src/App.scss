@@ -207,6 +207,14 @@ button {
     .logo-mask-color {
         background-color: transparent !important;
     }
+
+    .project__container-image img  {
+        mix-blend-mode: normal;
+    }
+
+    .app__content-right {
+        gap: 5rem;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -259,6 +267,10 @@ button {
 
     .app__projects-list {
         gap: 2rem;
+    }
+    
+    .app__content-right {
+        gap: 1rem;
     }
 }
 
