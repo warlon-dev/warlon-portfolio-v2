@@ -283,7 +283,7 @@ button {
     .app__skills {
         align-items: center;
 
-        h2 {
+        &>h2 {
             text-align: center;
         }
     }
