@@ -7,7 +7,6 @@
 }
 
 ::-webkit-scrollbar {
-    // position: absolute;
     background-color: rgba(27, 188, 155, 0.1);
     transition: background-color  0.5s ease;
 }
@@ -215,6 +214,15 @@ button {
     .app__content-right {
         gap: 5rem;
     }
+
+    .App {
+        overflow-y: scroll;
+        
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 850px) {

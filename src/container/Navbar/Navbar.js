@@ -7,7 +7,7 @@ import { MenuLink } from '../../components';
 import './Navbar.scss';
 
 const Navbar = ({setActiveOverlay, linkScrolled}) => {
-  const [toggleMenu, setToggleMenu] = useState(true)
+  const [toggleMenu, setToggleMenu] = useState(false)
   const [isMediaScreen, setIsMediaScreen] = useState(false);
   const [activeLink, setActiveLink] = useState('About');
 
