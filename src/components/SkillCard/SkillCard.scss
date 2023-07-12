@@ -1,0 +1,56 @@
+.skill__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 100%;
+    position: relative;
+    transition:  1s ease;
+    clip-path: circle(50% at center);
+    cursor: pointer;
+
+    img {
+        transition: 0.3s ease;
+        border: 1px solid rgba($color: #fff, $alpha: 0.15);
+        border-radius: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.skill__container-small {
+    width: 3rem;
+    height: 3rem;
+}
+
+.skill__container-white {
+    background-color: #05193E;
+    transition: 0.3s ease;
+}
+
+.logo-mask-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.logo-mask-color {
+    mix-blend-mode: color;
+    background-color: var(--color-bg);
+}
+
+.logo-mask-white {
+    mix-blend-mode: darken;
+    background-color: var(--color-secondary);
+}
+
+
+.skill__hovered>div {
+    opacity: 0;
+}

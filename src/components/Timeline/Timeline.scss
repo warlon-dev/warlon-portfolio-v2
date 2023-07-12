@@ -1,0 +1,40 @@
+.timeline__container {
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    margin-top: 2rem;
+}
+
+.timeline__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+    
+.timeline__divider-line {
+    width: 3px;
+    height: 100%;
+    background-color: var(--color-secondary);
+}
+
+
+.timeline__divider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--color-secondary);
+    position: absolute;
+    transition: 0.1s ease;
+
+    &.active {
+        background-color: var(--color-green);
+        width: 15px;
+        height: 15px;
+    }
+
+    &.hovered {
+        background-color: var(--color-green);
+    }
+}

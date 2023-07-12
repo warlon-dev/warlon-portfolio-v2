@@ -1,0 +1,14 @@
+.app__about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 4rem 0;
+    padding: 4rem 0;
+}
+
+
+@media screen and (max-height:900px) {
+    .app__about {
+        padding: 4.5rem 0;
+    }
+}

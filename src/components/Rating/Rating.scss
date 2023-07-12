@@ -1,0 +1,27 @@
+.rating__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: default;
+    padding: 0.05rem 0.25rem;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: rgba(255, 255 ,255, 0.05);
+    }
+
+    p {
+        flex:1;
+        color: var(--secondary, #8498BD);
+        font-size: 1rem;
+        font-family: var(--font-family);
+        line-height: 120%;
+        text-align: left;
+    }
+
+    svg {
+        color: var(--color-green);
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,55 @@
+.timelineItem__container {
+    background-color: rgba(255,255,255,0.05);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    min-height: 75px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin: 1rem 0;
+
+    p {
+        color: var(--color-secondary);
+        font-size: 0.75rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        transition: 0.5s ease;
+    }
+
+    h1 {
+        transition: 0.5s ease;
+        font-size: 1rem;
+    }
+
+    h2 {
+        transition: 0.5s ease;
+        font-size: 0.9rem;
+    }
+    &:hover {
+        background-color: rgba(27, 188, 155,0.15);
+
+        p,  h2 {
+            color: var(--color-green);
+        }
+    }
+
+    &:active {
+        background-color: rgba(27, 188, 155,0.35);
+
+        p, h2 {
+            color: var(--color-green);
+        }
+    }
+
+    &.active {
+        background-color: rgba(27, 188, 155,0.25);
+        
+        p, h2 {
+            color: var(--color-green);
+        }
+        h1 {
+            font-size: 1.1rem;
+        }
+    }
+}

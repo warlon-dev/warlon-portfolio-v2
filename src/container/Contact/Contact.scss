@@ -1,0 +1,121 @@
+.app__contact {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
+    padding: 4rem;
+    border-radius: 2rem;
+    min-width: 800px;
+    position: relative;
+
+    &>svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1rem;
+        font-size: 2rem;
+    }
+}
+
+.app__contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        margin-top: 2rem;
+    }
+}
+
+.app__contact-inputs {
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+
+    div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+.app__contact-message {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.swal-title {
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.swal-text {
+    font-size: 1rem;
+    font-family: var(--font-family);
+    text-align: center;
+    margin: 0 1.5rem;
+}
+
+.swal-button {
+    background-color: var(--color-green);
+}
+
+.swal-icon--success {
+    border-color: var(--color-green);
+}
+.swal-icon--success__line {
+    background-color: var(--color-green);
+}
+
+@media screen and (max-width:960px) {
+    .app__contact {
+        width: 100%;
+        min-width: 0;
+    }
+    .app__contact-inputs {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .app__contact {
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        label {
+            font-size: 1rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    .app__contact {
+        height: 100%;
+        border-radius: 0;
+        align-items: center;
+        justify-content: center;
+        
+        h1 {
+            font-size: 1rem;
+        }
+        label {
+            font-size: 0.9rem;
+        }
+        input, textarea {
+            font-size: 1rem;
+        }
+    }
+}

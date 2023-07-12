@@ -1,0 +1,13 @@
+.resourcelink__container {
+    svg {
+        font-size: 2rem;
+        color: var(--color-secondary);
+        transition: 0.5s ease;
+    }
+
+    &:hover {
+        svg {
+            color: var(--color-primary);
+        }
+    }
+}

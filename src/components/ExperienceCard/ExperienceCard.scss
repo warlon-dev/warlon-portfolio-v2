@@ -1,0 +1,49 @@
+.exp__container {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: 0.3s ease;
+    gap: 1rem;
+
+    &:hover {
+        background-color: rgba($color: #fff, $alpha: 0.05);
+        
+        .exp__container-dates>p {
+            color: rgba(27, 188, 155,0.8);
+        }
+    }
+    &:active {
+        background-color: rgba($color: #fff, $alpha: 0.1);
+    }
+}
+
+.exp__container-dates {
+    width: 100px;
+    p {
+        margin-top: 0.35rem;
+        color: #455167;
+        font-size: 0.75rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        transition: 0.3s ease;
+    }
+}
+
+.exp__container-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.exp__container-content_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
