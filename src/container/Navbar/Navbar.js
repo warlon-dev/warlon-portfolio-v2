@@ -37,34 +37,6 @@ const Navbar = ({setActiveOverlay, linkScrolled}) => {
   }, [linkScrolled]);
 
 
-  // const handleScroll = () => {
-  //   const sections = ['about', 'skills', 'projects', 'experiences'];
-  //   for (let i = 0; i < sections.length; i++) {
-  //     const item = sections[i];
-  //     const section = document.getElementById(item);
-  //     const rect = section.getBoundingClientRect();
-  //     let isVisible = false;
-  //     console.log('scroll');
-  //     if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-  //       // IF SECTION IS CONTAINED IN THE SCREENVIEW
-  //       isVisible = true;
-  //     } else if (rect.top <= 0 && rect.bottom >= window.innerHeight) {
-  //       // IF SECTION COVERS THE SCREENVIEW
-  //       isVisible = true;
-  //     }
-
-  //     if (isVisible) {
-  //       setActiveLink(item);
-  //       break;
-  //     }
-  //   }
-  // };
-
-
-  // const handleMenuLinkClick = () => {
-  //   setMenuLinkClicked(true);
-  // };
-
   return (
     <>
       <div className={`app__navbar ${!isMediaScreen?'slide-right':(toggleMenu?'slide-right':'slide-left')}`}>

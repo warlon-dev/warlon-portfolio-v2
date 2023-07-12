@@ -203,6 +203,10 @@ button {
         width: 80px;
         height: 80px;
     }
+
+    .logo-mask-color {
+        background-color: transparent !important;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -214,6 +218,10 @@ button {
         font-size: 2.5rem;
         letter-spacing: 0.7rem;
     }
+    .app__projects-list {
+        gap: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -237,13 +245,52 @@ button {
         text-align: center;
     }
 
+    .section__heading {
+        font-size: 1.2rem;
+    }
+    .app__skills-container div{
+        width: 60px;
+        height: 60px;
+    }
+
+    .exp__container {
+        flex-direction: column;
+    }
+
+    .app__projects-list {
+        gap: 2rem;
+    }
 }
 
 
 @media screen and (max-width: 390px) {
     .section__padding {
         padding: 0 2rem;
+    }
 
+    .app__skills {
+        align-items: center;
+
+        h2 {
+            text-align: center;
+        }
+    }
+    .app__skills-container {
+        justify-content: center;
+    }
+    .app__skills-tools {
+        align-items: center;
+        div {
+            justify-content: center;
+        }
+    } 
+
+    .project__container {
+        align-items: center;
+    }
+
+    .section__title {
+        font-size: 2rem;
     }
 
 }
