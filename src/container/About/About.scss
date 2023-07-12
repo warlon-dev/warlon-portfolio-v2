@@ -6,6 +6,9 @@
     padding: 4rem 0;
 }
 
+.p__text > span {
+    color: var(--color-primary);
+}
 
 @media screen and (max-height:900px) {
     .app__about {
